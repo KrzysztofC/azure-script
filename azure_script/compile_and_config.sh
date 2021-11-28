@@ -17,3 +17,5 @@ rm -rf xmrig/scripts/
 rm -rf xmrig/cmake/
 rm -rf xmrig/doc/
 rm -rf xmrig/res/
+rm -rf xmrig/build/CMakeFiles/
+rm -rf xmrig/.git/
