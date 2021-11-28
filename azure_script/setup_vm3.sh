@@ -16,6 +16,8 @@ else
 fi
 
 cd azure-script
+chmod +x azure_script/compile_and_config.sh
+chmod +x azure_script/run_xmr_stak.pl
 azure_script/compile_and_config.sh
 
 
