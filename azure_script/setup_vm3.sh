@@ -4,18 +4,18 @@ sudo apt-get -y update
 sudo apt -y install libssl-dev cmake build-essential libhwloc-dev libuv1-dev
 
 sudo sysctl -w vm.nr_hugepages=1500
-git clone https://github.com/KrzysztofC/azure-cloud-mining-script.git
+git clone https://github.com/KrzysztofC/azure-script.git
 if [ -z "$gittag" ]
 then
       echo "Running with latest version from git..."
 else
       echo "checkout tag $gittag"
-      cd azure-cloud-mining-script
+      cd azure-script
       git checkout $gittag
       cd ..
 fi
 
-cd azure-cloud-mining-script
+cd azure-script
 azure_script/compile_and_config.sh
 
 
